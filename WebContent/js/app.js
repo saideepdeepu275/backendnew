@@ -9,13 +9,13 @@
 	    $routeProvider
 
             // route for the home page
-            .when('/Register', {
+            .when('/register', {
                 templateUrl : 'views/Register.html',
                 controller  : 'UserController'
             })
 
             // route for the about page
-            .when('/Login', {
+            .when('/login', {
                 templateUrl : 'views/Login.html',
                 controller  : 'UserController'
             })
@@ -24,7 +24,11 @@
             .when('/Home', {
                 templateUrl : 'views/Home.html',
                 controller  : 'HomeController'
-            });
+            })
+	    .when("/addjob",{
+			templateUrl:   "views/jobform.html",
+			controller:    "JobController"
+		})
     });
 
     // create the controller and inject Angular's $scope

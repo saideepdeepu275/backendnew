@@ -1,7 +1,9 @@
 <!DOCTYPE html>
+<html lang="en" data-ng-app='myApp'>
+
 <head>
 
-   	<title>Bootstrap Example</title>
+   	<title>Collaboration</title>
    	<meta charset="utf-8">
    	<link rel="stylesheet" href="resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="resources/css/bootstrap-theme.min.css">
@@ -9,12 +11,14 @@
 	<script type="text/javascript" src="resources/js/angular.min.js"></script>
 	<script type="text/javascript" src="resources/js/angular-route.js"></script>
 	<script type="text/javascript" src="resources/js/angular-cookies.js"></script>
-  	<script type="text/javascript" src="resources/js/angular-cookies.js"></script>
+  	
   	<script src="js/app.js"></script>
-  	<script src="service/UserService.js"></script>
-    <script src="controller/UserController.js"></script>
-  	<script src="controller/HomeController.js"></script>
-  
+  	<script src="services/UserService.js"></script>
+    <script src="Controller/UserController.js"></script>
+  	<!-- <script src="services/JobService.js"></script>
+  	<script src="Controller/HomeController.js"></script>
+   	<script src="Controller/JobController.js"></script>
+   	 -->
   	
 </head>
 
@@ -24,15 +28,17 @@
 	<nav class="navbar navbar-default">
 		    <div class="container-fluid">
            	<div class="navbar-header">
-    	        <a class="navbar-brand" href="/">NIIT</a>
+    	        <a class="navbar-brand" href="/">JOBDETAILS</a>
     	    </div>
     	<ul class="nav navbar-nav">
     		  
     		  <li class="active"><a href="#Home">Home</a></li>
-    		  <li><a href="#Login" data-ng-hide="currentUser.firstName">Login</a></li>
-    		  <li><a href="#Register" data-ng-click="register()" data-ng-hide="currentUser.firstName">Register</a></li>
-    		    <li><a href="" data-ng-click="logout()" data-ng-show="currentUser.firstName">logout</a></li>
-      	      <li><a href="#Blog">Blog</a></li>
+    		  <li><a href="#login" data-ng-hide="currentUser.firstName">Login</a></li>
+    		  <li><a href="#register" data-ng-click="register()" data-ng-hide="currentUser.firstName">register</a></li>
+    	
+      	      <li><a href="#blog">Blog</a></li>
+      	      <li><a href="#addjob">job</a></li>
+      	      
    
        </ul>
   </div>

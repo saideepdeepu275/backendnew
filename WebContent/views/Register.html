@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title> REGISTER</title>
 </head>
 <body>
- <div ng-controller='UserController'>
+ <div data-ng-controller='UserController'>
 <div class="container" align="justify">
 		<div class="row vertical-offset-100">
 		    <div class="col-md-6 col-md-offset-14">
@@ -15,10 +15,10 @@
 				 	</div>
 					<fieldset><br>
 						<div class="form-group" align="center">
-							<label class="col-md-4 control-label"><i>Enter Firstname</i></label><input type="text" ng-model="user.firstName"><br>
+							<label class="col-md-4 control-label"><i>Enter First name</i></label><input type="text" ng-model="user.firstName"><br>
 						</div>	
 						<div class="form-group" align="center">
-							<label class="col-md-4 control-label"><i>Enter Lastname</i></label><input type="text" ng-model="user.lastName"><br>
+							<label class="col-md-4 control-label"><i>Enter Last name</i></label><input type="text" ng-model="user.lastName"><br>
 						</div>
 						<div class="form-group" align="center">
 							<label class="col-md-4 control-label"><i>Enter Email</i></label><input type="text" ng-model="user.email"><br>
@@ -27,7 +27,7 @@
 							<label class="col-md-4 control-label"><i>Enter Contact</i></label><input type="text" ng-model="user.contact"><br>
 						</div>
 						<div class="form-group" align="center">
-							<label class="col-md-4 control-label"><i>Enter Username</i></label><input type="text" ng-model="user.userName"><br>
+							<label class="col-md-4 control-label"><i>Enter User name</i></label><input type="text" ng-model="user.userName"><br>
 						</div>
 						<div class="form-group" align="center">
 							<label class="col-md-4 control-label"><i>Enter Password</i></label><input type="password" ng-model="user.password"><br>
@@ -36,6 +36,7 @@
 							<label class="col-md-4 control-label"><i>Select Role</i></label><input type="radio" ng-model="user.role" value="Student">Student
 							<input type="radio" ng-model="user.role" value="Alumini">Alumini
 							<input type="radio" ng-model="user.role" value="Employee">Employee
+							
 						</div>
 						<div class="form-group" align="center"><input type="submit" value="Register" data-ng-click="register()"><br></div><br>
 					</fieldset>
