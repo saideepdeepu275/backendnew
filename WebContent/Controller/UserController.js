@@ -23,7 +23,7 @@ app.controller('UserController',function(UserService,$scope,$location,$rootScope
 		UserService.login($scope.user).then(function(response){//200,User
 			console.log("login start")
 			$rootScope.currentUser=response.data
-			$cookieStore.put('currentUser',response.data)
+			$cookieStore.put('currentuser',response.data)
 			$location.path('/')
 		},function(response){//401,500....
 			if(response.status==401){
@@ -55,8 +55,4 @@ app.controller('UserController',function(UserService,$scope,$location,$rootScope
 			
 		})
 	}	
-	
-	
-	
-	
 })
