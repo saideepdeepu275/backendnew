@@ -6,14 +6,12 @@ app.factory('UserService',function($http)
     var userService={}
     
     userService.registerUser = function(user){
-    	return $http.post(BASSE_URL+'/signUp',user)
+    	return $http.post(BASSE_URL+'/register',user)
     }
     
     userService.login=function(user){
     	return $http.post(BASSE_URL +"/login",user)
     }
- 
-
 
 userService.logout=function(user){
 	return $http.get(BASSE_URL +"/logout",user)

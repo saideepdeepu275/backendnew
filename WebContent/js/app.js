@@ -25,11 +25,20 @@
                 templateUrl : 'views/Home.html',
                 controller  : 'HomeController'
             })
-	    .when("/addjob",{
-			templateUrl:   "views/jobform.html",
-			controller:    "JobController"
-		})
+            
+            
+            
+              .when('/addblog',{
+           	templateUrl:'views/Blogform.html', //V to Controller
+           	controller:'BlogPostController'
+            })
+            
+            
+            .when('/getblogs',{
+           	templateUrl:'views/bloglist.html',//Controller to V
+           	controller:'BlogPostController'
+            })
+	  
     });
 
-    // create the controller and inject Angular's $scope
-   
+    
